@@ -1,5 +1,5 @@
 # Airdrop Script 
-Use this script to quickly and simply perform token airdrop from exist ERC20 Token contract on Ethereum
+Use this script to quickly and simply perform token airdrop from existing ERC20 Token contract on Ethereum
 ## Requirement
 `node`
 
@@ -18,8 +18,8 @@ Use this script to quickly and simply perform token airdrop from exist ERC20 Tok
 
 ### Prepare token contract ABI and address
 1. get the token contract address
-2. get the token contract abi from the token contract source code(you can get it on etherscan.io using the contract address you get before)
-3. copy it into 'token_contract_abi.txt'
+2. get the token contract abi from the token contract source code (you can get it on [Etherscan](https://etherscan.io) using the contract address you get before)
+3. copy it into `token_contract_abi.txt`
 
 ### Here you go
 If you have setted holder address, holder key, token contract address in script, simply use this
@@ -39,6 +39,7 @@ node airdrop.js  0xC160C39E3c6De4B4E4193cAF7e0769a3E6002482 45dec472e5e726ecb7d8
 1. When use one holder address to do airdrop, better not use this address to do other transactions at the same time because of ehthereum nonce design
 2. An alternative way and more stable way is to deploy smart contract for airdrop, using this way can also avoid potential nonce issue. This will be contributed further. 
 3. Some important parameters can be changed in script manually. They are `AIR_DROP_GAS_PRICE`， `NODE`, `DECIMALS`,  `air_drop_amount`and `AIR_DROP_GAS_LIMIT`.
+
 	* `AIR_DROP_GAS_PRICE` by current network staus
 	* `air_drop_amount` is the number of tokens you want to do airdrop for one address
 	* `DECIMALS` is the decimals of that token, often is 1e18 
