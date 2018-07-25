@@ -1,0 +1,10 @@
+{
+  "name": "KaleidoTPSTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bignumber.js": "^7.2.1",
+    "web3": "^1.0.0-beta.34"
+  }
+}
