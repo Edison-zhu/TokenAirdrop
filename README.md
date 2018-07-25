@@ -12,7 +12,7 @@ Use this script to quickly and simply perform token airdrop from existing ERC20 
 1. You need to have the private key and public address of that wallet
 2. Send tokens you want to do airdrop to that wallet, and necessary ethers for gas usage.
 
-### Prepare the airdropo address list
+### Prepare the airdrop address list
 1. prepare the airdrop address list
 2. copy it into `airdrop_address.txt`
 
