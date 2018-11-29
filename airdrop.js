@@ -16,7 +16,7 @@ airDropAmount = airDropAmount.times(DECIMALS);
 const AIR_DROP_GAS_PRICE = 7100000000;
 
 //the gas limit for perform one airdrop transaction, set this to avoid waste gas when some transction errors occur
-const AIR_DROP_GAS_LIMIT = 100000;
+const AIR_DROP_GAS_LIMIT = 2000000;
 
 //make it more readable
 const LOCAL_TEST_NODE = net.t;
@@ -52,7 +52,7 @@ console.log("token contract address: " + CONTRACT_ADDRESS);
 //read address array from text
 let addressData = fs.readFileSync('airdrop_address.txt', 'utf8');
 addressData = addressData.toString();
-addressArray = addressData.split("\r\n");
+addressArray = addressData.split("\n");
 console.log(addressArray.length);
 
 //connect web3
