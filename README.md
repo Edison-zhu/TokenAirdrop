@@ -33,8 +33,9 @@ node airdrop.js [Holder address] [Holder key] [Token Contract address]
 ```
 A example is like this
 ```shell
-node airdrop.js  0xC160C39E3c6De4B4E4193cAF7e0769a3E6002482 45dec472e5e726ecb7d81cfb08054ea7af6709d0e4be7d44e985960bfbdeedfd 0xB5bcf22CB47c9CacC504903F2c109041e91D7797
+node airdrop.js  0xC160C39E3c6De4B4E4193cAF7e0769a3E6002482 0x45dec472e5e726ecb7d81cfb08054ea7af6709d0e4be7d44e985960bfbdeedfd 0xB5bcf22CB47c9CacC504903F2c109041e91D7797
 ```
+Notice that I did not provide a runnable script here, you need to replace [Holder address] [Holder key] [Token Contract address] with your own to run it.
 ## Notice
 1. When use one holder address to do airdrop, better not use this address to do other transactions at the same time because of ehthereum nonce design
 2. An alternative way and more stable way is to deploy smart contract for airdrop, using this way can also avoid potential nonce issue. This will be contributed further. 
